@@ -1,0 +1,47 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+a.out
+gnl
+gnl_bonus
+
+# Test files and directories
+test
+test.c
+main.c
+main
+*.dSYM/
+*Tester/
+*tester/
+tests/
+test_*/
+gnlTester/
+
+# MacOS files
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+
+# Test input files (optional)
+*.txt
+!example.txt
+

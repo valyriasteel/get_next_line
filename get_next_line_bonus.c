@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bbosnak <bbosnak@student.42kocaeli.com.tr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/27 11:25:32 by bbosnak           #+#    #+#             */
-/*   Updated: 2023/07/27 11:25:34 by bbosnak          ###   ########.tr       */
+/*   Created: 2023/07/27 11:22:48 by bbosnak           #+#    #+#             */
+/*   Updated: 2023/07/27 11:22:49 by bbosnak          ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 #include <stdlib.h>
 #include <unistd.h>
 
@@ -70,16 +70,16 @@ static char	*ft_read_data(int fd, char *save)
 char	*get_next_line(int fd)
 {
 	char		*line;
-	static char	*save;
+	static char	*save[4096];
 	int			len;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
-	save = ft_read_data(fd, save);
-	if (!save)
+	save[fd] = ft_read_data(fd, save[fd]);
+	if (!save[fd])
 		return (NULL);
-	len = ft_linelen(save);
-	line = ft_strndup(save, len);
-	save = save_rest(save, len);
+	len = ft_linelen(save[fd]);
+	line = ft_strndup(save[fd], len);
+	save[fd] = save_rest(save[fd], len);
 	return (line);
 }
