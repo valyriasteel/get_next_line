@@ -14,7 +14,7 @@
   * [Prerequisites](#prerequisites)
   * [Compilation](#compilation)
   * [Usage Example](#usage-example)
-* [Buffer Size Configuration](#buffer-size-configuration)
+* [Buffer Size Configuration](#-buffer-size-configuration)
 * [What I Learned](#-what-i-learned)
 * [Project Requirements](#-project-requirements)
 * [License](#-license)
@@ -205,7 +205,7 @@ int main(void)
 }
 ```
 
-## ⚙️ Buffer Size Configuration
+## ⚡ Buffer Size Configuration
 
 The `BUFFER_SIZE` is crucial for performance and testing:
 
