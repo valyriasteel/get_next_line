@@ -31,11 +31,11 @@ char *get_next_line(int fd);
 Returns a line read from the file descriptor, including the terminating `\n` character (if present).
 
 **Why This Project Matters:**
-* Introduces **static variables** for state retention across function calls
-* Develops skills in **file descriptor management** and low-level file I/O
-* Requires **dynamic buffer handling** with configurable buffer sizes
-* Teaches **memory-efficient** line reading without loading entire files
-* Builds foundation for handling multiple file descriptors simultaneously
+- Introduces **static variables** for state retention across function calls
+- Develops skills in **file descriptor management** and low-level file I/O
+- Requires **dynamic buffer handling** with configurable buffer sizes
+- Teaches **memory-efficient** line reading without loading entire files
+- Builds foundation for handling multiple file descriptors simultaneously
 
 The result is a reusable function that can read any text file line by line, making it an essential utility for file processing in C.
 
@@ -281,7 +281,7 @@ This project was developed according to 42 School's strict requirements:
   - Can read from fd 3, then 4, then 3 again without losing position
   - Uses array indexed by fd for state storage
 - **Testing**: Thoroughly tested with buffer sizes: 1, 42, 9999, 10000000
-- **Undefined Behavior**: File changes during reading, binary files (as per PDF specification)
+- **Undefined Behavior**: File changes during reading, binary files (as per project specification)
 
 ### File Structure
 Mandatory files:
