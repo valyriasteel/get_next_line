@@ -14,7 +14,7 @@
   * [Prerequisites](#prerequisites)
   * [Compilation](#compilation)
   * [Usage Example](#usage-example)
-* [Buffer Size Configuration](#-buffer-size-configuration)
+* [Buffer Size Configuration](#buffer-size-configuration)
 * [What I Learned](#-what-i-learned)
 * [Project Requirements](#-project-requirements)
 * [License](#-license)
